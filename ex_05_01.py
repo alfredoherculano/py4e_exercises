@@ -1,3 +1,5 @@
+#Find out a way to write the same code using len() and max()
+
 count = 0
 total = 0
 
