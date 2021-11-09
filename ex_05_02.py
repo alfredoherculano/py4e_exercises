@@ -1,3 +1,5 @@
+#Why to I have to write part of the code outside the while loop? Is it possible to achieve the same results with just the loop?
+
 ini_num = input('Enter a number: ')
 	
 if ini_num == 'done':
