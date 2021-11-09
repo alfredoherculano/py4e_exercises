@@ -10,5 +10,6 @@ while True:
 		total = total + int(ini_num)
 	except:
 		print('Bad data. Invalid input.')
+		continue
 		
 print(total, count, total/count)
