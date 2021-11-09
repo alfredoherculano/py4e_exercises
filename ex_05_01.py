@@ -6,7 +6,7 @@ while True:
 	try:
 		if ini_num == 'done':
 			break
-		count = int(ini_num) + 1
+		count = count + 1
 		total = total + int(ini_num)
 	except:
 		print('Bad data. Invalid input.')
