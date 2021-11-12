@@ -1,4 +1,4 @@
-fname = input('Enter file:')
+fname = input('Enter file: ')
 
 try:
 	fhand = open(fname)
