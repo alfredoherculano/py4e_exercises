@@ -1,3 +1,5 @@
+#Revisit this exercise later to see if there is a better understanding of the code
+
 file = input('Enter file: ')
 fhand = open(file)
 
