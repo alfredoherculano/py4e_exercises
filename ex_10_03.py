@@ -9,7 +9,7 @@ except:
 d = dict()
 for line in fhand:
 	import string #import string module
-	line = line.translate(str.maketrans('', '', string.punctuation)) #remove all punctiation
+	line = line.translate(str.maketrans('', '', string.punctuation)) #remove all punctuation
 	line = ''.join(char for char in line if char.isalpha()) #use join() to make new strings with just the alphabetic characters
 	line = line.lower() #set all characters to lowercase
 	
