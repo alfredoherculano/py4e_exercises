@@ -6,8 +6,8 @@ try:
 
 	data = ''
 	for line in fhand:
-		line = line.decode().strip()
-		data += line + '\n'
+		line = line.decode()
+		data += line
 		
 	print(data[:3000])
 	print(len(data))
