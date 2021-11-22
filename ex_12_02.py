@@ -1,3 +1,5 @@
+#Didn't understand this one very well, will have to come back to it later.
+
 import socket
 
 try:
@@ -11,7 +13,7 @@ try:
     mysock.send(cmd)
 
 
-    text = b''
+    text = b''  #why do I have to creat an empty bytestring variable?
     while True:
         data = mysock.recv(512)
         if len(data) < 1:
@@ -21,7 +23,7 @@ try:
 
     text = text.decode()
 
-    print(text[:3000])
+    print(text[:3000])  #I can use string slicing directly in the print statement, without having to use .split() before?
     print(len(text))
 
     mysock.close()
