@@ -1,13 +1,13 @@
 import socket
 
+url = input('Enter url: ')
+
 try:
-    url = input('Enter url: ')
+    urlparts = url.split('/')
+    host = urlparts[2]
 except:
     print('Invalid adress.')
     quit()
-
-urlparts = url.split('/')
-host = urlparts[2]
 
 mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 mysock.connect((host, 80))
