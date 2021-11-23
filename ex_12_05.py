@@ -1,3 +1,5 @@
+#Review this code in the future to see if I have a better understanding of it.
+
 import socket
 
 try:
