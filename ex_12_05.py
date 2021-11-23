@@ -22,5 +22,5 @@ try:
     mysock.close()
 
 except:
-    print('Invalid adress.')
+    print('Invalid address.')
     quit()
