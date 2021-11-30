@@ -1,5 +1,3 @@
-#Come back later to figure out how to code the JOIN part
-
 import json
 import sqlite3
 
@@ -40,7 +38,7 @@ for entry in json_data:
 
 	conn.commit()
 	
-	# sqlstr = 'SELECT Member.(user_id, course_id), User.name, Course.title FROM Member JOIN User JOIN Course ON Member.(user_id,) = User.id AND Member.(,course_id) = Course.id'
+	sqlstr = 'SELECT User.name, Course.title FROM User JOIN Course JOIN Member ON Member.user_id = User.id AND Member.course_id = Course.id'
 
-	# for row in sqlstr:
-	# 	print(str(row[0]))
+	for row in cur.execute(sqlstr):
+		print(row[0], row[1])
