@@ -1,3 +1,5 @@
+#Getting 403 error every time, even though I regenerated my API keys. Get back to later to try to figure out how to solve that.
+
 import urllib.request, urllib.parse, urllib.error
 import twurl
 import json
