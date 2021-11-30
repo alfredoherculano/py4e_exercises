@@ -1,3 +1,5 @@
+#Come back later to figure out how to code the JOIN part
+
 import json
 import sqlite3
 
